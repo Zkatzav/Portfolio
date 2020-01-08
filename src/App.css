@@ -1,3 +1,124 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-brand {
+  color: red
+}
+.container {
+  margin: 4vh 4vw;  
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  background: whitesmoke;
+  border-right: solid 0.5px burlywood;
+  border-left: solid 0.5px burlywood;
+}
+
+.general {
+  padding: 5vw;
+  text-align: justify;
+  overflow: auto;
+  display: grid;
+  grid-template-areas: 
+  "h h h"
+  "p p i ";
+
+}
+
+.general > h5 {
+  grid-area: h;
+}
+
+.general > p {
+  grid-area: p;
+  padding: 0.5vw;
+}
+
+.general > img {
+  grid-area: i;
+  width: 17vw;
+  margin: 2%;
+  border-radius: 15px;
+  align-self: center;
+}
+
+.professional {
+  padding: 5vw;
+}
+
+.professional > p {
+  padding: 0.5vw;
+}
+
+p {
+  margin: 2% 5%;
+}
+
+h4 {
+  margin: 1px 10px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+span {
+  font-size: 1.1rem;
+  color: slategrey;
+}
+
+.contact {
+  margin: 3vw;
+  height: auto;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+.contact > div {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  font-family: 'Courier Prime';
+  
+}
+bold {
+  font-size: 1.4em;
+}
+.contact > div > span {
+  font-family: monospace;
+  font-size: 1.4em;
+}
+
+.contact-links {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 2vw;
+}
+
+.contact-img{
+  margin-bottom: 1vw;
+  width: 12vw;
+  height: auto;
+  border-radius: 80px;
+}
+
+button {
+  border: none;
+  background: none;
+
+}
+
+@media only screen and (min-width: 800px) {
+
+  .general {
+    padding: 2vw;
+  }
+  .professional {
+    padding: 3vw;
+  }
+
+  .general > img {
+    width: 12vw;
+    align-self: top;
+  }
 }

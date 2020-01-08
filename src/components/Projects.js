@@ -2,10 +2,10 @@ import React from 'react'
 
 const Projects = () => {
   return (
-    <div>
-      Projects page content
+    <div className="container">
+      <span>Coming soon !</span>
     </div>
-  )
+  );
 }
 
-export default Projects
+export default Projects;

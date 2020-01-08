@@ -9,7 +9,7 @@ const Navigation = (props) => {
   return (
     <div>
       <Navbar color="faded" light expand="md">
-        <NavbarBrand href="/" className="mr-5">Ziv Katzav</NavbarBrand>
+        <NavbarBrand href="/" className="mr-5" style={{fontFamily: 'Courier Prime'}}>Ziv Katzav</NavbarBrand>
         <NavbarToggler onClick={toggleNavbar} className="mr-2" />
         <Collapse isOpen={!collapsed} navbar>
           <Nav navbar>
